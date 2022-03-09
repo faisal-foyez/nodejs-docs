@@ -101,5 +101,21 @@
 
 // console.log('\x1b[33m%s\x1b[0m','Hello')
 
-const chalk = require('chalk')
-console.log(chalk.yellow("Yellow"))
+// import chalk from 'chalk';
+// console.log(chalk.yellow.underline("Hello"))
+
+/**
+ * Node progress bar
+ */
+
+import ProgressBar  from 'progress';
+
+const bar = new ProgressBar(':bar', {total:10});
+
+const intervalId = setInterval(()=>{
+    bar.tick();
+    if(bar.complete){
+        //finish the interval
+        clearInterval(intervalId);
+    }
+},1000)
