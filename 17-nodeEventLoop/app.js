@@ -20,3 +20,35 @@
  * Promises that resolve before the current function ends will be executed 
  * right after the current function.
  */
+
+/**
+ * Point to remember:
+ * The event loop starts to pull functions from queues only when call stack is empty.
+ * So even for promise it will pull when all synchronous tasks are done.
+ * Just promise queue has more priority than callback queue(settimeout queue);
+ */
+
+ function callback(){
+    console.log('executed by settimeout');
+}
+
+function promise(res){
+    console.log(res);
+}
+
+function callAfterMain() {
+    console.log('called after main');
+}
+function main(){
+    console.log('first executed main');
+    setTimeout(callback, 1000);
+    Promise.resolve('executed by promise').then(promise);
+}
+
+main();
+
+callAfterMain();
+
+(()=>{
+    console.log('iife');
+})();
