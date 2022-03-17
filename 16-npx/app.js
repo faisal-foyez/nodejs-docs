@@ -3,7 +3,7 @@
 /**
  * 1.
  * Easily run local commands:
- * Running npx commandname automatically finds the correct reference of the command 
+ * Running npx command name automatically finds the correct reference of the command 
  * inside the node_modules folder of a project, 
  * without needing to know the exact path, 
  * and without requiring the package to be installed globally and in the user's path.

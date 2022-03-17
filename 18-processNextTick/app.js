@@ -25,7 +25,7 @@
  * (after the current function), but as soon as possible, not queue it.
  */
 
-function callback(){
+function setTimeoutCallback(){
     console.log('executed by settimeout');
 }
 
@@ -41,7 +41,7 @@ function main(){
         console.log('\x1b[33m%s\x1b[0m','next tick is called after the all synchronouse operation and before all asynchronous operation');
     })
     console.log('first executed main');
-    setTimeout(callback, 1000);
+    setTimeout(setTimeoutCallback, 1000);
     Promise.resolve('executed by promise').then(promise);
 }
 
