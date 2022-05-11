@@ -31,3 +31,5 @@
  * You can run code that sits in a GitHub gist, for example:
  * npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
  */
+
+console.log('hello');
