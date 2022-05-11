@@ -24,11 +24,11 @@
  * But it's a standard function in Node.js.
  */
 function setTimeoutCallback(){
-    console.log('\x1b[36m%s\x1b[0m','executed by settimeout');
+  console.log('\x1b[36m%s\x1b[0m','executed by settimeout');
 }
 
 function setImmediateCallback(){
-    console.log('\x1b[35m%s\x1b[0m','setImmediate is called after process.nextTick and promise but before setTimeout');
+  console.log('\x1b[35m%s\x1b[0m','setImmediate is called after process.nextTick and promise but before setTimeout');
 }
 
 function promise(res){
