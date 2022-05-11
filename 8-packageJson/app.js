@@ -58,11 +58,17 @@ Sets the package homepage
 
 /**
  * version
+
 Indicates the current version of the package.
 {"version": "1.0.0"}
-This property follows the semantic versioning (semver) notation for versions, which means the version is always expressed with 3 numbers: x.x.x.
 
-The first number is the major version, the second the minor version and the third is the patch version.
+This property follows the semantic versioning (semver) notation for versions, 
+which means the version is always expressed with 3 numbers: x.x.x.
 
-There is a meaning in these numbers: a release that only fixes bugs is a patch release, a release that introduces backward-compatible changes is a minor release, a major release can have breaking changes.
+The first number is the major version, 
+the second the minor version and the third is the patch version.
+
+There is a meaning in these numbers: a release that only fixes bugs is a patch release, 
+a release that introduces backward-compatible changes is a minor release, 
+a major release can have breaking changes.
  */

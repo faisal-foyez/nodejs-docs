@@ -6,7 +6,7 @@
  * <=: you accept any version equal or lower to the one you specify
  * <: you accept any version lower than the one you specify
  * =: you accept that exact version
- * -: you accept a range of versions. Example: 2.1.0 - 2.6.2
+ * -: you accept a range of versions. Example: 2.1.0 - 2.6.0
  * ||: you combine sets. Example: < 2.1 || > 2.6
  */
 

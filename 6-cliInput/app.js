@@ -1,14 +1,14 @@
 
 /** input readline */
-// const readline = require('readline').createInterface({
-//     input:process.stdin,
-//     output:process.stdout
-// });
+const readline = require('readline').createInterface({
+    input:process.stdin,
+    output:process.stdout
+});
 
-// readline.question(`What is you name`, userName =>{
-//     console.log(`Hi ${userName}`);
-//     readline.close();
-// })
+readline.question(`What is you name`, userName =>{
+    console.log(`Hi ${userName}`);
+    readline.close();
+})
 ///////////////////////
 
 //** reading with inquirer */
@@ -26,3 +26,13 @@ inquirer.prompt(questions).then(answer =>{
     console.log(`Hi ${answer['fname']}`);
 })
 ////////////////////////////////
+
+
+const readl = require('readline').createInterface({
+  input:process.stdin,
+  output:process.stdout
+});
+
+readl.on('line',(input)=>{
+  console.log(input);
+})

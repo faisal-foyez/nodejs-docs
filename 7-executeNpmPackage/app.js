@@ -9,3 +9,5 @@
  * but npx, is a much better option
  * e.g npx cowsay take me out of here
  */
+
+//Input: npx cowsay take me out of here
