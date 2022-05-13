@@ -4,8 +4,11 @@ const log = function(a){}
 //****** Getting information out of a path *****//
 const path = require('path');
 const filePath = './pathTest.txt';
+//Return the last portion of a path. A second parameter can filter out the file extension:
 log(path.basename(filePath));
+//Return the directory part of a path:
 log(path.dirname(filePath));
+//Return the extension part of a path
 log(path.extname(filePath));
 
 //You can get the file name without the extension by specifying a second argument to basename
