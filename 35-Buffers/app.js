@@ -74,7 +74,7 @@ buf[1] = 111; // o in UTF-8
 console.log(buf.toString()); // Hoy!
 
 
-/*********** Slice the buffer **********************************/
+/******************** Slice the buffer **********************************/
 //Slice does not copy the buffer. A slice is not a copy: 
 //the original buffer is still the source of truth. If that changes, your slice changes.
 const buf9 = Buffer.from('Hey!');
